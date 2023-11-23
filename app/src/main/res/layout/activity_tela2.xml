@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".tela2">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="CONVERTER PARA REAL"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editQuantidadeDolar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Digite a quantidade em Moeda estrangeira"
+        android:inputType="number|numberDecimal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="textStart"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editCotacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Digite a cotação da moeda estrangeira"
+        android:inputType="number|numberDecimal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="textStart"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Valor em Real:"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bConverter"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_weight="1"
+        android:onClick="converter"
+        android:text="Converter"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Clique no item da lista para ver a Cotação atual"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listFuncoes"
+        android:layout_width="232dp"
+        android:layout_height="91dp"
+        android:layout_weight="1"
+        android:background="#16701B"
+        android:cacheColorHint="#FBFAFA"
+        android:textFilterEnabled="false" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        android:layout_weight="1"
+        android:paddingTop="60dp"
+        app:srcCompat="@drawable/baseline_attach_money_24" />
+
+</LinearLayout>
