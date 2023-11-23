@@ -80,7 +80,7 @@ public class tela2 extends AppCompatActivity {
 
 
         });
-
+        //
     }
     public void converter(View view){
 
